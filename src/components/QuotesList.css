@@ -1,4 +1,36 @@
 .quote-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    column-gap: 5em;
+    list-style-type: none;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.quote__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #000000; */
+    background: rgba(00, 00, 00, .5);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.quote__image{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
 }

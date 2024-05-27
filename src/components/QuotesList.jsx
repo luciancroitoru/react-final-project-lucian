@@ -12,19 +12,23 @@ function QuotesList(){
             <ul className='quote-list'>
                 { quotes.map((quote) => (
                   <li className="quote" key={quote.id}>
-                    <img className="quote__image" src={quote.imageUrl}/>
-                    <span className="quote__author">
-                        {quote.author}
-                    </span>
-                    <span className="quote__date">
-                        {quote.date}
-                    </span>
+                    <div className='image-container'>
+                        <img className="quote__image" src={quote.imageUrl}/>
+                        <h4 className="quote__text">
+                        {quote.text}
+                        </h4>
+                    </div>
+                    <div>
+                        <span className="quote__author">
+                         {quote.author}
+                        </span>
+                        <span className="quote__date">
+                            {quote.date}
+                        </span>
+                    </div>
                     <div className="quote__bookmark">
                         <i className="quote_bookmark-icon"></i>
                     </div>
-                    <h4 className="quote__text">
-                        {quote.text}
-                    </h4>
                   </li>  
                 )) }
             </ul>

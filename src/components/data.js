@@ -12,7 +12,7 @@ export const quotes = [
     ),
 
     new Quote(
-        "It is never too late to call an old friend",
+        "Eat, sleep, code, repeat",
         "Lucian Taylor",
         `https://picsum.photos/id/2/${resolution}`,
         "5/22/2024",
