@@ -31,7 +31,7 @@ function QuoteCard({ quoteElement }){
 export default QuoteCard;
 
 QuoteCard.propTypes = {
-    quote: {
+    quoteElement: {
         id: PropTypes.string,
         imageUrl: PropTypes.string,
         text: PropTypes.string,
