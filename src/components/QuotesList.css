@@ -1,13 +1,19 @@
+h1{
+    margin-left: 3rem;
+}
+
 .quote-list{
     display: flex;
     flex-flow: wrap;
-    column-gap: 5em;
+    column-gap: 4em;
+    row-gap: 3em;
     list-style-type: none;
 }
 
 .image-container{
     position: relative;
     display: inline-block;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .image-container img {
@@ -16,7 +22,7 @@
     height: auto;
 }
 
-.quote__text{
+.quote-container{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,7 +31,7 @@
     background: rgba(00, 00, 00, .5);
     color: #fff;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -33,4 +39,21 @@
     width: 500px;
     height: 300px;
     border-radius: 8px;
+}
+
+.quote__text{
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+
+.quote__author{
+    font-family:cursive
+}
+
+.quote__date{
+    margin-left: 11rem;
+}
+
+.span{
+    font-family: Times;
 }
