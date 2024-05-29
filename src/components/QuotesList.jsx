@@ -14,7 +14,7 @@ function QuotesList({searchTerm}){
     return(
         <section>
             <header className='title'>
-                <h1>Your list of quotes</h1>
+                <h2>Your list of quotes:</h2>
             </header>
 
             {

@@ -1,6 +1,8 @@
-header {
+.title {
     margin-left: 3rem;
     margin-top: 30px;
+    font-size: larger;
+    font-family: cursive;
 }
 
 .quote-list{
