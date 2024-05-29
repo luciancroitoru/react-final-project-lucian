@@ -1,0 +1,18 @@
+.search-container{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.search{
+    padding-left: 25px;
+    font-size: larger;
+    font-family: cursive;
+}

@@ -31,11 +31,12 @@ function QuoteCard({ quoteElement }){
 export default QuoteCard;
 
 QuoteCard.propTypes = {
-    quoteElement: {
+    quoteElement: PropTypes.shape( {
         id: PropTypes.string,
         imageUrl: PropTypes.string,
         text: PropTypes.string,
         author: PropTypes.string,
-        date: PropTypes.any,
-    },
+        date: PropTypes.date,
+        bookmark: PropTypes.bool,
+    }),
 };

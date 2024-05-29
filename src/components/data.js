@@ -13,7 +13,7 @@ export const quotes = [
 
     new Quote(
         "''Eat, sleep, code, repeat''",
-        "Lucian Taylor",
+        "Luci Taylor",
         `https://picsum.photos/id/2/${resolution}`,
         "5/22/2024",
         false
@@ -21,7 +21,7 @@ export const quotes = [
 
     new Quote(
         "''It is never too late to call an old friend''",
-        "Lucian Taylor",
+        "Lucian Croitoru",
         `https://picsum.photos/id/3/${resolution}`,
         "5/23/2024",
         false

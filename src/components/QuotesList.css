@@ -1,5 +1,6 @@
-h1{
+header {
     margin-left: 3rem;
+    margin-top: 30px;
 }
 
 .quote-list{
@@ -56,4 +57,11 @@ h1{
 
 .span{
     font-family: Times;
+}
+
+.quoteNotFoundMessage{
+    font-family: cursive;
+    font-size: x-large;
+    margin-left: 3em;
+    color: red;
 }

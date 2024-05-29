@@ -4,19 +4,28 @@ import './QuotesList.css';
 
 
 
-function QuotesList(){
+function QuotesList({searchTerm}){
+    console.log({searchTerm})
+
+    const filteredQuotes = quotes.filter(({ text, author}) => (text+author).toLowerCase().includes(searchTerm.toLowerCase()));
+
+    const quotesNotFound = filteredQuotes.length === 0;
 
     return(
         <section>
-            <header>
+            <header className='title'>
                 <h1>Your list of quotes</h1>
             </header>
 
-            <ul className="quote-list">
-                { quotes.map((quoteItem) => (
+            {
+                quotesNotFound ? (<p className='quoteNotFoundMessage'>Quote not found? Try redefining search.</p>) : 
+            
+            (<ul className="quote-list">
+                {  filteredQuotes.map((quoteItem) => (
                   <QuoteCard quoteElement = {quoteItem} key={quoteItem.id}/>
                 )) }
-            </ul>
+            </ul>)
+            }
         </section>
     )
 }
