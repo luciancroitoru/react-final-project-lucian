@@ -1,13 +1,14 @@
 import { quotes } from './data.js';
 import QuoteCard from './QuoteCard';
 import './QuotesList.css';
+import PropTypes from 'prop-types';
 
 
 
 function QuotesList({searchTerm}){
     console.log({searchTerm})
 
-    const filteredQuotes = quotes.filter(({ text, author}) => (text+author).toLowerCase().includes(searchTerm.toLowerCase()));
+    const filteredQuotes = quotes.filter(({ text, author, date}) => (text+author+date).toLowerCase().includes(searchTerm.toLowerCase()));
 
     const quotesNotFound = filteredQuotes.length === 0;
 
@@ -31,3 +32,7 @@ function QuotesList({searchTerm}){
 }
 
 export default QuotesList;
+
+QuotesList.propTypes = {
+    searchTerm: PropTypes.string,
+}

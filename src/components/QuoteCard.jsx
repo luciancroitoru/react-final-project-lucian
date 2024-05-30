@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './QuoteCard.css';
 
 function QuoteCard({ quoteElement }){
     const { id, imageUrl, text, author, date} = quoteElement;

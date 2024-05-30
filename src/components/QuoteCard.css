@@ -1,0 +1,24 @@
+.quote__image{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.quote__text{
+    font-family: cursive;
+    font-size: 1.3em;
+}
+
+.quote__author{
+    font-family:cursive
+}
+
+.quote__date{
+    position: absolute;
+    margin-left: 12rem;
+    color: whitesmoke;
+}
+
+.span{
+    font-family: Times;
+}

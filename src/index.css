@@ -1,4 +1,30 @@
 :root {
+  --primary-color: #3C5F50
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: whitesmoke
+}
+
+h2{
+  color: whitesmoke;
+}
+
+input{
+  background-color: var(--primary-color);
+  border: none;
+  color: whitesmoke;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +91,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

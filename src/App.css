@@ -1,4 +1,17 @@
-/* #root {
+@media (max-width: 480px) {
+  .quote-item {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row on mobile */
+  }
+}
+
+/*
+@media (max-width: 768px) {
+  .quote-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablet
+  }
+}
+
+ #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
