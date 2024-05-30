@@ -1,14 +1,15 @@
 .title {
-    margin-left: 3rem;
+    margin-left: 5rem;
     margin-top: 30px;
     font-size: larger;
     font-family: cursive;
 }
 
 .quote-list{
+    margin-left: 5rem;
     display: flex;
     flex-flow: wrap;
-    column-gap: 4em;
+    column-gap: 3em;
     row-gap: 3em;
     list-style-type: none;
 }
@@ -17,6 +18,7 @@
     position: relative;
     display: inline-block;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 .image-container img {
