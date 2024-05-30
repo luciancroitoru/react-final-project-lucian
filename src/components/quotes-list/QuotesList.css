@@ -8,6 +8,7 @@
 .quote-list{
     margin-left: 4rem;
     margin-right: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-flow: wrap;
     column-gap: 3em;

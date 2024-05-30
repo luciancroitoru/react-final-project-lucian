@@ -1,4 +1,4 @@
-import { Quote } from "./models"
+import { Quote } from "../components/models"
 
 const resolution = `450/300`;
 

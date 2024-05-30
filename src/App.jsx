@@ -1,31 +1,19 @@
-import { useState } from "react";
-
 import './App.css';
-
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-
-import QuotesList from './components/QuotesList';
-import FavoriteQuotes from './components/FavoriteQuotes';
-
-
+import Home from "./components/home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import QuoteDetails from './components/quote-details/QuoteDetails';
 
 function App() {
-
-  const [searchTerm, setSearchTerm] = useState('');
-
-  function onSearchChange(_searchTerm){
-    setSearchTerm(_searchTerm);
-  }
-
   return (
     <>
-      <Navbar/>
-      <Search onSearchChange = {onSearchChange}/>
-      <FavoriteQuotes/>
-      <QuotesList searchTerm = {searchTerm}/>
-    </> 
-  )
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element = {<Home/>}></Route>
+          <Route path="/quote/:idFromPath" element={<QuoteDetails/>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App

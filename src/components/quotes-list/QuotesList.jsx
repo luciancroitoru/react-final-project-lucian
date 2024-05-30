@@ -1,7 +1,8 @@
-import { quotes } from './data.js';
-import QuoteCard from './QuoteCard';
+import { quotes } from '../../data/data.js';
+import QuoteCard from '../quote-card/QuoteCard.jsx';
 import './QuotesList.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +24,9 @@ function QuotesList({searchTerm}){
             
             (<ul className="quote-list">
                 {  filteredQuotes.map((quoteItem) => (
-                  <QuoteCard quoteElement = {quoteItem} key={quoteItem.id}/>
+                <Link key={quoteItem.id} to={'/quote/' + quoteItem.id}>
+                    <QuoteCard quoteElement={quoteItem}/>
+                </Link>
                 )) }
             </ul>)
             }
