@@ -17,33 +17,6 @@
     justify-content: space-between;
 }
 
-.image-container{
-    position: relative;
-    display: inline-block;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-}
-
-.image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.quote-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(00, 00, 00, .5);
-    color: #fff;
-    padding: 10px 5px;
-    font-size: 15px;
-    text-align: center;
-    width: 60%;
-    height: auto;
-}
-
 .quoteNotFoundMessage{
     font-family: cursive;
     font-size: x-large;

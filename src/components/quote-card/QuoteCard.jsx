@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './QuoteCard.css';
 
 function QuoteCard({ quoteElement }){
-    const { id, imageUrl, text, author, date} = quoteElement;
+    const { id, imageUrl, text, author, date, rating} = quoteElement;
 
     return(
         <li className="quote" key={id}>
@@ -17,9 +17,12 @@ function QuoteCard({ quoteElement }){
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div className='date-rating-container'>
                         <span className="quote__date">
-                            {date}
+                            Date: {date}
+                        </span>
+                        <span className="quote__rating">
+                            Rating: {rating}/5
                         </span>
                     </div>
                     <div className="quote__bookmark">
@@ -38,6 +41,7 @@ QuoteCard.propTypes = {
         text: PropTypes.string,
         author: PropTypes.string,
         date: PropTypes.date,
+        rating: PropTypes.number,
         bookmark: PropTypes.bool,
     }),
 };

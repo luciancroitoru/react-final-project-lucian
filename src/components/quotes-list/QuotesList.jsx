@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function QuotesList({searchTerm}){
     console.log({searchTerm})
 
-    const filteredQuotes = quotes.filter(({ text, author, date}) => (text+author+date).toLowerCase().includes(searchTerm.toLowerCase()));
+    const filteredQuotes = quotes.filter(({ text, author, date, rating}) => (text+author+date+rating+"/5").toLowerCase().includes(searchTerm.toLowerCase()));
 
     const quotesNotFound = filteredQuotes.length === 0;
 

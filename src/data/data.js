@@ -8,6 +8,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/1/${resolution}`,
         "5/21/2024",
+        5,
         false
     ),
 
@@ -16,6 +17,7 @@ export const quotes = [
         "Anonymous",
         `https://picsum.photos/id/2/${resolution}`,
         "5/22/2024",
+        4,
         false
     ),
 
@@ -24,6 +26,7 @@ export const quotes = [
         "Luci Taylor",
         `https://picsum.photos/id/3/${resolution}`,
         "5/23/2024",
+        4,
         false
     ),
 
@@ -32,6 +35,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/4/${resolution}`,
         "5/25/2024",
+        3,
         false
     ),
 
@@ -40,6 +44,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/5/${resolution}`,
         "5/26/2024",
+        4,
         false
     ),
     new Quote(
@@ -47,6 +52,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/1/${resolution}`,
         "5/21/2024",
+        5,
         false
     ),
 
@@ -55,6 +61,7 @@ export const quotes = [
         "Luci Taylor",
         `https://picsum.photos/id/2/${resolution}`,
         "5/22/2024",
+        5,
         false
     ),
 
@@ -63,6 +70,7 @@ export const quotes = [
         "Lucian Croitoru",
         `https://picsum.photos/id/3/${resolution}`,
         "5/23/2024",
+        3,
         false
     ),
 
@@ -71,6 +79,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/4/${resolution}`,
         "5/25/2024",
+        4,
         false
     ),
 
@@ -79,6 +88,7 @@ export const quotes = [
         "Lucian Taylor",
         `https://picsum.photos/id/5/${resolution}`,
         "5/26/2024",
+        4,
         false
     ),
 ]
