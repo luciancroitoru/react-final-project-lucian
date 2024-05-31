@@ -1,26 +1,46 @@
 import { quotes } from "../../data/data";
 import { useParams, useNavigate } from "react-router-dom";
 import './QuoteDetails.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+async function retrieveQuote(setQuote, quoteId){
+    const response = await fetch(`http://localhost:3000/quotes/${quoteId}`);
+    const quote = await response.json();
+
+    setQuote(quote);
+}
 
 export default function QuoteDetails(){
+    const[quote, setQuote] = useState({});
     const { idFromPath } = useParams();
-     const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
+    const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
     console.log({selectedQuote});
     console.log({idFromPath});
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!selectedQuote) {
-        navigate("/");
-        }
+        // if (!selectedQuote) {
+        // navigate("/");
+        // }
+
+        retrieveQuote(setQuote, idFromPath);
     }, []);
 
-    if(!selectedQuote){
+    useEffect(() => {
+        if(!quote){
+            navigate('/');
+        }
+    }, [quote])
+
+
+
+    // if(!selectedQuote){
+    if(!quote){
         return;
     }
 
-    const{imageUrl, text, author, date, rating} = selectedQuote;
+    // const{imageUrl, text, author, date, rating} = selectedQuote;
+    const{imageUrl, text, author, date, rating} = quote;
 
     return(
         <section>
