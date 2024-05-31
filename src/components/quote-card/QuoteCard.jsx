@@ -40,7 +40,7 @@ QuoteCard.propTypes = {
         imageUrl: PropTypes.string,
         text: PropTypes.string,
         author: PropTypes.string,
-        date: PropTypes.date,
+        date: PropTypes.any,
         rating: PropTypes.number,
         bookmark: PropTypes.bool,
     }),

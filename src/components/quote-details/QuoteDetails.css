@@ -1,0 +1,21 @@
+.quote-detail__text,
+.quote-detail__author,
+.quote-detail__date,
+.quote-detail__rating
+{
+    color: whitesmoke;
+    font-size: large;
+    font-family: cursive;
+    width: fit-content;
+}
+
+.quote-detail__container{
+    display:flex;
+    flex-direction: column;
+    margin: 5rem;
+    overflow: auto;
+}
+
+.quote-detail__image{
+    width: fit-content;
+}

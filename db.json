@@ -1,0 +1,94 @@
+{
+  "quotes": [
+    {
+      "id": "a8d2518d-f7d6-4b7e-abe7-61ba1182df66",
+      "text": "''Code even when everything seems dark in front of your eyes''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/1/450/300",
+      "date": "5/21/2024",
+      "rating": 5,
+      "bookmark": false
+    },
+    {
+      "id": "b5a8ac45-062e-4ff9-b1e2-63eb2f7f744a",
+      "text": "''Eat, sleep, code, repeat''",
+      "author": "Anonymous",
+      "imageUrl": "https://picsum.photos/id/2/450/300",
+      "date": "5/22/2024",
+      "rating": 4,
+      "bookmark": false
+    },
+    {
+      "id": "6c4845e5-1934-4629-bd4d-2b9e1b9b1c07",
+      "text": "''It is never too late to call an old friend''",
+      "author": "Luci Taylor",
+      "imageUrl": "https://picsum.photos/id/3/450/300",
+      "date": "5/23/2024",
+      "rating": 4,
+      "bookmark": false
+    },
+    {
+      "id": "58bc1042-45c1-49ad-b5aa-d6a279063ef5",
+      "text": "''Note to myself: when code becomes pain, I become stronger''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/4/450/300",
+      "date": "5/25/2024",
+      "rating": 3,
+      "bookmark": false
+    },
+    {
+      "id": "a13df359-9a97-4642-ae8e-4af1ae10eb19",
+      "text": "''It doesn't matter what you do, but how you do it''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/5/450/300",
+      "date": "5/26/2024",
+      "rating": 4,
+      "bookmark": false
+    },
+    {
+      "id": "a42e5d0c-6f13-4bcc-a49c-fde50d07dc17",
+      "text": "''In a world full of coding obstacles you need to be able to React''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/1/450/300",
+      "date": "5/21/2024",
+      "rating": 5,
+      "bookmark": false
+    },
+    {
+      "id": "6b3e23b3-4329-4b37-bb31-f09879400879",
+      "text": "''Constantly prepare yourself to React faster and code better''",
+      "author": "Luci Taylor",
+      "imageUrl": "https://picsum.photos/id/2/450/300",
+      "date": "5/22/2024",
+      "rating": 5,
+      "bookmark": false
+    },
+    {
+      "id": "b19ef6f3-b8e3-46a4-b687-355b76db9fff",
+      "text": "''When technology changes, your habits change''",
+      "author": "Lucian Croitoru",
+      "imageUrl": "https://picsum.photos/id/3/450/300",
+      "date": "5/23/2024",
+      "rating": 3,
+      "bookmark": false
+    },
+    {
+      "id": "df5ae0ea-db98-4e17-a937-fad8a116953c",
+      "text": "''Wise words take time to develop''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/4/450/300",
+      "date": "5/25/2024",
+      "rating": 4,
+      "bookmark": false
+    },
+    {
+      "id": "3e17c9d2-74ef-4b67-a921-2e40be715163",
+      "text": "''Don't plan too much. The world constantly changes whether you like it, or not.''",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/5/450/300",
+      "date": "5/26/2024",
+      "rating": 4,
+      "bookmark": false
+    }
+  ]
+}

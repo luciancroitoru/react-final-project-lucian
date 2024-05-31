@@ -13,6 +13,8 @@ function QuotesList({searchTerm}){
 
     const quotesNotFound = filteredQuotes.length === 0;
 
+    console.log(JSON.stringify(quotes));
+
     return(
         <section>
             <header className='title'>
