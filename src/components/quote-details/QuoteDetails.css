@@ -7,6 +7,8 @@
     font-size: large;
     font-family: cursive;
     width: fit-content;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
 }
 
 .quote-detail__container{
@@ -18,4 +20,14 @@
 
 .quote-detail__image{
     width: fit-content;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quote-detail__title{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    color: whitesmoke;
+    font-family: cursive;
+    margin-bottom: 2rem;
 }

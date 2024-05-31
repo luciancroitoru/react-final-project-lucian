@@ -25,7 +25,7 @@ export default function QuoteDetails(){
     return(
         <section>
            <div className="quote-detail__container">
-                <h1>Quote Details:</h1>
+                <h1 className="quote-detail__title">Quote Details:</h1>
                 <img className="quote-detail__image" src={imageUrl} />
                 <p className="quote-detail__text">Quote text: {text}</p>
                 <p className="quote-detail__author">Author: {author}</p>
