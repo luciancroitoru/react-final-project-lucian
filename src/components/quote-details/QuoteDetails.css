@@ -1,7 +1,8 @@
 .quote-detail__text,
 .quote-detail__author,
 .quote-detail__date,
-.quote-detail__rating
+.quote-detail__rating,
+.quote-detail__back_to_home
 {
     color: whitesmoke;
     font-size: large;

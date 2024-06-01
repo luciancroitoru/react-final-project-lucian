@@ -1,20 +1,16 @@
 // import { quotes } from '../../data/data.js';
+import { useContext } from "react";
 import QuoteCard from "../quote-card/QuoteCard.jsx";
 import "./QuotesList.css";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { QuoteContext } from "../../App.jsx";
 
-function retrieveQuotes() {
-  return fetch("http://localhost:3000/quotes").then((response) =>
-    response.json()
-  );
-}
 
-function QuotesList({ searchTerm }) {
-  const [quotes, setQuotes] = useState([]);
+function QuotesList({ searchTerm}) {
+    const {quotes} = useContext(QuoteContext);
 
-  console.log({ searchTerm });
+//   console.log({ searchTerm, quotes });
 
   const filteredQuotes = quotes.filter(({ text, author, date, rating }) =>
     (text + author + date + rating + "/5")
@@ -26,10 +22,6 @@ function QuotesList({ searchTerm }) {
 
   // console.log(JSON.stringify(quotes));
 
-  useEffect(() => {
-    retrieveQuotes().then((quotesFromServer) => setQuotes(quotesFromServer));
-  }, []);
-  console.log(quotes);
 
   return (
     <section>
@@ -39,7 +31,7 @@ function QuotesList({ searchTerm }) {
 
       {quotesNotFound ? (
         <p className="quoteNotFoundMessage">
-          Quote not found? Try redefining search.
+          Quote not found.
         </p>
       ) : (
         <ul className="quote-list">
@@ -58,4 +50,5 @@ export default QuotesList;
 
 QuotesList.propTypes = {
   searchTerm: PropTypes.string,
+  quotes: PropTypes.any,
 };
