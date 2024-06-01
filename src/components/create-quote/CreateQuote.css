@@ -1,0 +1,133 @@
+.create-quote-back-title-container{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+
+}
+
+.create-quote-section{
+    margin-top: 0.1rem;
+}
+
+.quote-create-back-link{
+    padding: 2rem;
+}
+
+.create-page-title{
+    margin-left: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    /* margin-top: 4rem; */
+}
+
+.create-form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: cursive;
+}
+
+fieldset {
+  border: none;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-family: cursive;
+}
+
+.form-input{
+    border: 1px solid whitesmoke
+}
+
+.textarea-container{
+    display: flex;
+    align-items: center;
+}
+
+.form-input.form-textarea{
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+    text-align: center;
+    border: 1px solid white;
+    padding: 2rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 250px;
+    height:200px;
+    font-family: cursive;
+    border: 1px solid whitesmoke;
+    background: var(--primary-color);
+    color: whitesmoke;
+}
+
+.form-input.form-author{
+    font-size: 1rem;
+    font-family: cursive;
+    background-color: var(--primary-color);
+}
+
+.form-input.form-image-url{
+    font-size: 1rem;
+    width: 20rem;
+    background-color: var(--primary-color);
+}
+
+.form-input.form-date{
+    width: 12.5rem;
+}
+
+.form-input.form-rating{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background: var(--primary-color);
+    border: 1px solid whitesmoke;
+    color: 1px solid whitesmoke;
+}
+
+.create-form-container{
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+option{
+    color:whitesmoke
+}
+
+.form-input.create-button{
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-family: cursive;
+    color: whitesmoke;;
+    background: var(--primary-color);
+    width: 10rem;
+}

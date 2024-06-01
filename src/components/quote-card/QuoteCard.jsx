@@ -41,7 +41,7 @@ QuoteCard.propTypes = {
         text: PropTypes.string,
         author: PropTypes.string,
         date: PropTypes.any,
-        rating: PropTypes.number,
-        bookmark: PropTypes.bool,
+        rating: PropTypes.any,
+        bookmark: PropTypes.any,
     }),
 };

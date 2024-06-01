@@ -23,7 +23,7 @@ export default function QuoteDetails() {
         // onClick handler to perform side effects and navigate back to home
         const handleBackClick = () => {
             // Perform any side effect here (e.g., logging, state update, etc.)
-            console.log('Navigating back to home page');
+            // console.log('Navigating back to home page');
             navigate('/');
         };
 

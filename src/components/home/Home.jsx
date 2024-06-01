@@ -22,6 +22,7 @@ export default function Home(){
 
     useEffect(() => {
       retrieveQuotes().then((quotesFromServer) => setQuotes(quotesFromServer));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     // console.log(quotes);
 

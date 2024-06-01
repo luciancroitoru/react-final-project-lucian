@@ -5,7 +5,7 @@
       "text": "''Code even when everything seems dark in front of your eyes''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/1/450/300",
-      "date": "5/21/2024",
+      "date": "2024-5-21",
       "rating": 5,
       "bookmark": false
     },
@@ -14,7 +14,7 @@
       "text": "''Eat, sleep, code, repeat''",
       "author": "Anonymous",
       "imageUrl": "https://picsum.photos/id/2/450/300",
-      "date": "5/22/2024",
+      "date": "2024-5-22",
       "rating": 4,
       "bookmark": false
     },
@@ -23,7 +23,7 @@
       "text": "''It is never too late to call an old friend''",
       "author": "Luci Taylor",
       "imageUrl": "https://picsum.photos/id/3/450/300",
-      "date": "5/23/2024",
+      "date": "2024-5-23",
       "rating": 4,
       "bookmark": false
     },
@@ -32,7 +32,7 @@
       "text": "''Note to myself: when code becomes pain, I become stronger''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/4/450/300",
-      "date": "5/25/2024",
+      "date": "2024-5-25",
       "rating": 3,
       "bookmark": false
     },
@@ -41,7 +41,7 @@
       "text": "''It doesn't matter what you do, but how you do it''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/5/450/300",
-      "date": "5/26/2024",
+      "date": "2024-5-26",
       "rating": 4,
       "bookmark": false
     },
@@ -50,7 +50,7 @@
       "text": "''In a world full of coding obstacles you need to be able to React''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/1/450/300",
-      "date": "5/21/2024",
+      "date": "2024-5-21",
       "rating": 5,
       "bookmark": false
     },
@@ -59,7 +59,7 @@
       "text": "''Constantly prepare yourself to React faster and code better''",
       "author": "Luci Taylor",
       "imageUrl": "https://picsum.photos/id/2/450/300",
-      "date": "5/22/2024",
+      "date": "2024-5-22",
       "rating": 5,
       "bookmark": false
     },
@@ -68,7 +68,7 @@
       "text": "''When technology changes, your habits change''",
       "author": "Lucian Croitoru",
       "imageUrl": "https://picsum.photos/id/3/450/300",
-      "date": "5/23/2024",
+      "date": "2024-5-23",
       "rating": 3,
       "bookmark": false
     },
@@ -77,7 +77,7 @@
       "text": "''Wise words take time to develop''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/4/450/300",
-      "date": "5/25/2024",
+      "date": "2024-05-25",
       "rating": 4,
       "bookmark": false
     },
@@ -86,9 +86,65 @@
       "text": "''Don't plan too much. The world constantly changes whether you like it, or not.''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/5/450/300",
-      "date": "5/26/2024",
+      "date": "2024-05-26",
       "rating": 4,
       "bookmark": false
+    },
+    {
+      "id": "7109",
+      "text": "This is my first created quote",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/6/450/300",
+      "date": "2024-06-01",
+      "rating": 2
+    },
+    {
+      "id": "5fab",
+      "text": "fsd  dsad dasa",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/6/450/300",
+      "date": "2024-06-14",
+      "rating": "3"
+    },
+    {
+      "id": "af0f",
+      "text": "This quote is mine",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/7/450/300",
+      "date": "2024-06-02",
+      "rating": "3"
+    },
+    {
+      "id": "e2ce",
+      "text": "My one and only Quote",
+      "author": "Luci",
+      "imageUrl": "https://picsum.photos/id/8/450/300",
+      "date": "2024-06-02",
+      "rating": "2"
+    },
+    {
+      "id": "8fc6",
+      "text": "kdsaaa dsaaaaaaaaa dsaaaaaaaaaa dsaaaaaaaaa dsaaaaaaaaaaa dsaaaaaaaaaa",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/9/450/300",
+      "date": "2024-06-02",
+      "rating": "2"
+    },
+    {
+      "id": "24d5",
+      "text": "The more you struggle, the more resilient you become.",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/10/450/300",
+      "date": "2024-06-02",
+      "rating": "3"
+    },
+    {
+      "id": "d29e",
+      "text": "Link me with all the goods in this world",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/11/450/300",
+      "date": "2024-05-24",
+      "rating": "2"
     }
   ]
 }
