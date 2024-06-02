@@ -145,6 +145,22 @@
       "imageUrl": "https://picsum.photos/id/11/450/300",
       "date": "2024-05-24",
       "rating": "2"
+    },
+    {
+      "id": "bfc8",
+      "text": "The first quote of the day. honestly one of the best of the week. I quote \"quote\".",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/12/450/300",
+      "date": "2024-06-02",
+      "rating": "3"
+    },
+    {
+      "id": "7930",
+      "text": "Sell your code, not your soul.",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/12/450/300",
+      "date": "2024-06-02",
+      "rating": "2"
     }
   ]
 }
