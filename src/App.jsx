@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import QuoteDetails from './components/quote-details/QuoteDetails';
 import CreateQuote from './components/create-quote/CreateQuote';
 import { getQuotesFromServer } from './lib/quotes';
+import { Register } from './components/auth/register/Register';
 
 // import CreateQuote from './components/CreateQuote';
 // import Logout from './components/Logout';
@@ -29,6 +30,7 @@ useEffect(() =>{
            <Route path="/quote/:idFromPath" element={<QuoteDetails/>}></Route>
             <Route path="/create-quote" element={<CreateQuote/>}></Route>
             <Route path="/edit-quote/:idFromPath" element={<CreateQuote/>}></Route>
+            <Route path="/register" element={<Register/>}></Route>
             </Routes>
         </BrowserRouter>
       </QuoteContext.Provider>
