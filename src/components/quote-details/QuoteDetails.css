@@ -33,3 +33,14 @@
     margin-bottom: 2rem;
     padding: 1rem;
 }
+
+.quote-detail__delete_button{
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    color: whitesmoke;
+    font-family: cursive;
+    padding: 1rem;
+    background: var(--primary-color);
+    font-size: large;
+}

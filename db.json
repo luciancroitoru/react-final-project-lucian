@@ -99,38 +99,6 @@
       "rating": 2
     },
     {
-      "id": "5fab",
-      "text": "fsd  dsad dasa",
-      "author": "Lucian Taylor",
-      "imageUrl": "https://picsum.photos/id/6/450/300",
-      "date": "2024-06-14",
-      "rating": "3"
-    },
-    {
-      "id": "af0f",
-      "text": "This quote is mine",
-      "author": "Lucian Taylor",
-      "imageUrl": "https://picsum.photos/id/7/450/300",
-      "date": "2024-06-02",
-      "rating": "3"
-    },
-    {
-      "id": "e2ce",
-      "text": "My one and only Quote",
-      "author": "Luci",
-      "imageUrl": "https://picsum.photos/id/8/450/300",
-      "date": "2024-06-02",
-      "rating": "2"
-    },
-    {
-      "id": "8fc6",
-      "text": "kdsaaa dsaaaaaaaaa dsaaaaaaaaaa dsaaaaaaaaa dsaaaaaaaaaaa dsaaaaaaaaaa",
-      "author": "me",
-      "imageUrl": "https://picsum.photos/id/9/450/300",
-      "date": "2024-06-02",
-      "rating": "2"
-    },
-    {
       "id": "24d5",
       "text": "The more you struggle, the more resilient you become.",
       "author": "Lucian",
@@ -161,6 +129,22 @@
       "imageUrl": "https://picsum.photos/id/12/450/300",
       "date": "2024-06-02",
       "rating": "2"
+    },
+    {
+      "id": "b5a6",
+      "text": "hfdsssssssssssssssssssssssssssssssssssss lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll ;;;",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/14/450/300",
+      "date": "2024-06-02",
+      "rating": "1"
+    },
+    {
+      "id": "458d",
+      "text": "dfsssssssssssssssssssssssssssssssss njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk o",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/16/450/300",
+      "date": "2024-06-02",
+      "rating": "1"
     }
   ]
 }

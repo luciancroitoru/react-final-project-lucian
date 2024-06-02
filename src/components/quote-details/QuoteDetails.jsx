@@ -1,4 +1,4 @@
-import { quotes } from "../../data/data";
+// import { quotes } from "../../data/data";
 import { useParams, useNavigate } from "react-router-dom";
 import "./QuoteDetails.css";
 import { useEffect, useState } from "react";
@@ -15,30 +15,30 @@ async function retrieveQuote(setQuote, quoteId) {
 export default function QuoteDetails() {
   const [quote, setQuote] = useState({});
   const { idFromPath } = useParams();
-  const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
-  console.log({ selectedQuote });
-  console.log({ idFromPath });
+  // const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
+  // console.log({ selectedQuote });
+  // console.log({ idFromPath });
   const navigate = useNavigate();
 
-        // onClick handler to perform side effects and navigate back to home
-        const handleBackClick = () => {
-            // Perform any side effect here (e.g., logging, state update, etc.)
-            // console.log('Navigating back to home page');
-            navigate('/');
-        };
+  // onClick handler to perform side effects and navigate back to home
+  const handleBackClick = () => {
+    // Perform any side effect here (e.g., logging, state update, etc.)
+    // console.log('Navigating back to home page');
+    navigate("/");
+  };
 
   useEffect(() => {
     // if (!selectedQuote) {
     // navigate("/");
     // }
     retrieveQuote(setQuote, idFromPath);
-  }, []);
+  }, [idFromPath]);
 
   useEffect(() => {
     if (!quote) {
       navigate("/");
     }
-  }, [quote]);
+  }, [navigate, quote]);
 
   // if(!selectedQuote){
   if (!quote) {
@@ -46,14 +46,31 @@ export default function QuoteDetails() {
   }
 
   // const{imageUrl, text, author, date, rating} = selectedQuote;
-  const { imageUrl, text, author, date, rating } = quote;
+  const { imageUrl, text, author, date, rating, id } = quote;
+
+  function deleteQuote() {
+    const userConfirmedAction = confirm(
+      "Are you sure you want to delete this quote?"
+    );
+
+    if (userConfirmedAction) {
+      fetch(`http://localhost:3000/quotes/${id}`, {
+        method: "DELETE",
+      }).then(() => navigate("/"));
+    }
+  }
+
+  // function editQuote() {
+
+  // }
 
   return (
     <section>
       <div className="quote-detail__container">
         <Link to="/" className="quote-detail__back-link">
-          <IoArrowBackOutline className="quote-detail__back_to_home" 
-          onClick={handleBackClick}
+          <IoArrowBackOutline
+            className="quote-detail__back_to_home"
+            onClick={handleBackClick}
           />
         </Link>
         <h1 className="quote-detail__title">Quote Details:</h1>
@@ -62,6 +79,10 @@ export default function QuoteDetails() {
         <p className="quote-detail__author">Author: {author}</p>
         <p className="quote-detail__date">Date: {date}</p>
         <p className="quote-detail__rating">Rating: {rating}</p>
+
+        <button className="quote-detail__delete_button" onClick={deleteQuote}> Delete quote</button>
+
+        {/* <button className="quote-detail__edit_button" onClick={editQuote}>Edit quote</button> */}
       </div>
     </section>
   );

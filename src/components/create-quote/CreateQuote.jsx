@@ -83,7 +83,7 @@ export default function CreateQuote() {
               type="text"
               required
               minLength={10}
-              maxLength={150}
+              maxLength={135}
               //  defaultValue={selectedMovie && selectedMovie.title} same as below
               defaultValue={selectedQuote?.text}
             />
