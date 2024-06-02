@@ -60,9 +60,9 @@ export default function QuoteDetails() {
     }
   }
 
-  // function editQuote() {
-
-  // }
+  function editQuote() {
+    navigate(`/edit-quote/${id}`);
+  }
 
   return (
     <section>
@@ -80,9 +80,10 @@ export default function QuoteDetails() {
         <p className="quote-detail__date">Date: {date}</p>
         <p className="quote-detail__rating">Rating: {rating}</p>
 
+        <div className="quote-detail-edit-delete-button-container">
+        <button className="quote-detail__edit_button" onClick={editQuote}>Edit quote</button>
         <button className="quote-detail__delete_button" onClick={deleteQuote}> Delete quote</button>
-
-        {/* <button className="quote-detail__edit_button" onClick={editQuote}>Edit quote</button> */}
+        </div>
       </div>
     </section>
   );

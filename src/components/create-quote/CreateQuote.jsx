@@ -22,11 +22,13 @@ export default function CreateQuote() {
   const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
 
   // onClick handler to perform side effects and navigate back to home
-  const handleBackClick = () => {
+  const handleBackClickDetails = () => {
     // Perform any side effect here (e.g., logging, state update, etc.)
     // console.log('Navigating back to home page');
     navigate("/");
   };
+
+
 
   function saveQuote(event) {
     // Prevents page refresh when form is submitted (Browser default behavior)
@@ -47,7 +49,10 @@ export default function CreateQuote() {
       fetch(`http://localhost:3000/quotes/${idFromPath}`, {
         method: "PUT",
         body: JSON.stringify(quote),
-      }).then(() => getQuotesFromServer(setQuotes));
+    }).then(() => {
+        navigate("/");
+        getQuotesFromServer(setQuotes);
+      });
     } else {
       fetch("http://localhost:3000/quotes", {
         method: "POST",
@@ -68,10 +73,10 @@ export default function CreateQuote() {
         <Link to="/" className="quote-create-back-link">
           <IoArrowBackOutline
             className="quote-detail__back_to_home"
-            onClick={handleBackClick}
+            onClick={handleBackClickDetails}
           />
         </Link>
-        <span className="create-page-title">Create your quote below:</span>
+        <span className="create-page-title">Quote details below:</span>
         </div>
         <form className="create-form-container" onSubmit={saveQuote}>
           <fieldset className="textarea-container">
@@ -84,7 +89,7 @@ export default function CreateQuote() {
               required
               minLength={10}
               maxLength={135}
-              //  defaultValue={selectedMovie && selectedMovie.title} same as below
+              //  defaultValue={selectedQuote && selectedQuote.text} would do the same thing as the code below
               defaultValue={selectedQuote?.text}
             />
           </fieldset>
@@ -99,8 +104,8 @@ export default function CreateQuote() {
               required
               minLength={2}
               maxLength={30}
-              //  defaultValue={selectedMovie && selectedMovie.title} same as below
-              defaultValue={selectedQuote?.text}
+              //  defaultValue={selectedQuote && selectedQuote.author} would do the same thing as/is equivalent to the code below.
+              defaultValue={selectedQuote?.author}
             />
           </fieldset>
 

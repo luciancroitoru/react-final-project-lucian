@@ -91,12 +91,12 @@
       "bookmark": false
     },
     {
-      "id": "7109",
-      "text": "This is my first created quote",
+      "text": "This is my first created quote.",
       "author": "Lucian",
       "imageUrl": "https://picsum.photos/id/6/450/300",
       "date": "2024-06-01",
-      "rating": 2
+      "rating": "2",
+      "id": "7109"
     },
     {
       "id": "24d5",
@@ -115,12 +115,12 @@
       "rating": "2"
     },
     {
-      "id": "bfc8",
-      "text": "The first quote of the day. honestly one of the best of the week. I quote \"quote\".",
+      "text": "Prepare to react to constant change to find the key to success. ",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/12/450/300",
       "date": "2024-06-02",
-      "rating": "3"
+      "rating": "4",
+      "id": "bfc8"
     },
     {
       "id": "7930",
@@ -131,20 +131,20 @@
       "rating": "2"
     },
     {
-      "id": "b5a6",
-      "text": "hfdsssssssssssssssssssssssssssssssssssss lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll ;;;",
-      "author": "me",
-      "imageUrl": "https://picsum.photos/id/14/450/300",
-      "date": "2024-06-02",
-      "rating": "1"
-    },
-    {
-      "id": "458d",
-      "text": "dfsssssssssssssssssssssssssssssssss njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk o",
+      "text": "dfsssssssssssssssssssssssssssssssss njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk var 2",
       "author": "me",
       "imageUrl": "https://picsum.photos/id/16/450/300",
       "date": "2024-06-02",
-      "rating": "1"
+      "rating": "1",
+      "id": "458d"
+    },
+    {
+      "id": "75e0",
+      "text": "Get up early, put more happiness in your life, post a wise quote every day, and delete all negative thoughts.",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/15/450/300",
+      "date": "2024-06-02",
+      "rating": "5"
     }
   ]
 }
