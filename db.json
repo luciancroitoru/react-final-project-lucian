@@ -91,7 +91,7 @@
       "bookmark": false
     },
     {
-      "text": "This is my first created quote.",
+      "text": "When your development process seems overwhelming, have a break.",
       "author": "Lucian",
       "imageUrl": "https://picsum.photos/id/6/450/300",
       "date": "2024-06-01",
@@ -99,12 +99,12 @@
       "id": "7109"
     },
     {
-      "id": "24d5",
       "text": "The more you struggle, the more resilient you become.",
       "author": "Lucian",
-      "imageUrl": "https://picsum.photos/id/10/450/300",
+      "imageUrl": "https://picsum.photos/id/5/450/300",
       "date": "2024-06-02",
-      "rating": "3"
+      "rating": "3",
+      "id": "24d5"
     },
     {
       "id": "d29e",
@@ -129,14 +129,6 @@
       "imageUrl": "https://picsum.photos/id/12/450/300",
       "date": "2024-06-02",
       "rating": "2"
-    },
-    {
-      "text": "dfsssssssssssssssssssssssssssssssss njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk var 2",
-      "author": "me",
-      "imageUrl": "https://picsum.photos/id/16/450/300",
-      "date": "2024-06-02",
-      "rating": "1",
-      "id": "458d"
     },
     {
       "id": "75e0",

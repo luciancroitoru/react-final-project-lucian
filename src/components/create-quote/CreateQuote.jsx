@@ -1,19 +1,10 @@
-/*
- *
- * imageUrl
- * text
- * author
- * date
- * rating
- *
- */
-
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./CreateQuote.css";
 import { useContext } from "react";
 import { QuoteContext } from "../../App";
 import { getQuotesFromServer } from "../../lib/quotes";
-import { IoArrowBackOutline } from "react-icons/io5";
+// import { IoArrowBackOutline } from "react-icons/io5";
+import { TfiHome } from "react-icons/tfi";
 
 export default function CreateQuote() {
   const navigate = useNavigate();
@@ -27,8 +18,6 @@ export default function CreateQuote() {
     // console.log('Navigating back to home page');
     navigate("/");
   };
-
-
 
   function saveQuote(event) {
     // Prevents page refresh when form is submitted (Browser default behavior)
@@ -71,11 +60,25 @@ export default function CreateQuote() {
       <section className="create-quote-section">
         <div className="create-quote-back-title-container">
         <Link to="/" className="quote-create-back-link">
-          <IoArrowBackOutline
+          <TfiHome
             className="quote-detail__back_to_home"
             onClick={handleBackClickDetails}
           />
         </Link>
+
+        {/* <Link to="/" className="quote-create-back-link">
+          <IoArrowBackOutline
+            className="quote-detail__back_to_home"
+            onClick={handleBackClickDetails}
+          />
+        </Link> */}
+
+        {/* <Link to="/quote/{idFromPath}" className="quote-create-back-link">
+          <IoArrowBackOutline
+            className="quote-detail__back_to_quote_details"
+            onClick={handleBackClickDetails}
+          />
+        </Link> */}
         <span className="create-page-title">Quote details below:</span>
         </div>
         <form className="create-form-container" onSubmit={saveQuote}>
