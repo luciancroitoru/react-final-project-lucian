@@ -22,6 +22,12 @@ function QuotesList({ searchTerm}) {
 
   // console.log(JSON.stringify(quotes));
 
+  if(!quotes?.length){
+    return(
+      <h1>There are no quotes to display. Please create one from the navbar.</h1>
+    )
+  }
+
 
   return (
     <section>

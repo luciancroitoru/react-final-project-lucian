@@ -18,22 +18,12 @@
       "bookmark": false
     },
     {
-      "id": "b5a8ac45-062e-4ff9-b1e2-63eb2f7f744a",
-      "text": "''Eat, sleep, code, repeat''",
-      "author": "Anonymous",
-      "imageUrl": "https://picsum.photos/id/2/450/300",
-      "date": "2024-5-22",
-      "rating": 4,
-      "bookmark": false
-    },
-    {
-      "id": "6c4845e5-1934-4629-bd4d-2b9e1b9b1c07",
       "text": "''It is never too late to call an old friend''",
       "author": "Luci Taylor",
       "imageUrl": "https://picsum.photos/id/3/450/300",
-      "date": "2024-5-23",
-      "rating": 4,
-      "bookmark": false
+      "date": "2024-05-30",
+      "rating": "4",
+      "id": "6c4845e5-1934-4629-bd4d-2b9e1b9b1c07"
     },
     {
       "id": "58bc1042-45c1-49ad-b5aa-d6a279063ef5",
@@ -131,20 +121,20 @@
       "id": "bfc8"
     },
     {
-      "id": "7930",
-      "text": "Sell your code, not your soul.",
-      "author": "me",
-      "imageUrl": "https://picsum.photos/id/12/450/300",
-      "date": "2024-06-02",
-      "rating": "2"
-    },
-    {
       "id": "75e0",
       "text": "Get up early, put more happiness in your life, post a wise quote every day, and delete all negative thoughts.",
       "author": "Lucian",
       "imageUrl": "https://picsum.photos/id/15/450/300",
       "date": "2024-06-02",
       "rating": "5"
+    },
+    {
+      "text": "Eat, sleep, code, repeat!",
+      "author": "Anonymous",
+      "imageUrl": "https://picsum.photos/id/8/450/300",
+      "date": "2024-05-30",
+      "rating": "4",
+      "id": "FGJOWwW"
     }
   ]
 }

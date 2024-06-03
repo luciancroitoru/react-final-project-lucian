@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export function Register() {
+     const navigate = useNavigate();
     function register(event) {
       event.preventDefault();
   
@@ -23,7 +26,7 @@ export function Register() {
         },
         body: JSON.stringify(user)
       })
-      .then(response => console.log(response));
+      .then(() => navigate('/login'));
     }
   
     return (

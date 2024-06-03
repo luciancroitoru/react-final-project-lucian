@@ -1,7 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./CreateQuote.css";
 import { useContext } from "react";
-import { QuoteContext } from "../../App";
+import { AuthContext, QuoteContext } from "../../App";
 import { getQuotesFromServer } from "../../lib/quotes";
 // import { IoArrowBackOutline } from "react-icons/io5";
 import { TfiHome } from "react-icons/tfi";
@@ -10,12 +10,11 @@ export default function CreateQuote() {
   const navigate = useNavigate();
   const { quotes, setQuotes } = useContext(QuoteContext);
   const { idFromPath } = useParams();
+  const{auth} = useContext(AuthContext);
   const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
 
   // onClick handler to perform side effects and navigate back to home
   const handleBackClickDetails = () => {
-    // Perform any side effect here (e.g., logging, state update, etc.)
-    // console.log('Navigating back to home page');
     navigate("/");
   };
 
@@ -37,6 +36,10 @@ export default function CreateQuote() {
     if (idFromPath) {
       fetch(`http://localhost:3000/quotes/${idFromPath}`, {
         method: "PUT",
+        headers: {
+          'Content-Type': "application/json",
+          'Authorization': `Bearer ${auth}`
+        },
         body: JSON.stringify(quote),
     }).then(() => {
         navigate("/");
@@ -45,6 +48,10 @@ export default function CreateQuote() {
     } else {
       fetch("http://localhost:3000/quotes", {
         method: "POST",
+        headers: {
+          'Content-Type': "application/json",
+          'Authorization': `Bearer ${auth}`
+        },
         body: JSON.stringify(quote),
       }).then(() => {
         navigate("/");
@@ -65,20 +72,6 @@ export default function CreateQuote() {
             onClick={handleBackClickDetails}
           />
         </Link>
-
-        {/* <Link to="/" className="quote-create-back-link">
-          <IoArrowBackOutline
-            className="quote-detail__back_to_home"
-            onClick={handleBackClickDetails}
-          />
-        </Link> */}
-
-        {/* <Link to="/quote/{idFromPath}" className="quote-create-back-link">
-          <IoArrowBackOutline
-            className="quote-detail__back_to_quote_details"
-            onClick={handleBackClickDetails}
-          />
-        </Link> */}
         <span className="create-page-title">Quote details below:</span>
         </div>
         <form className="create-form-container" onSubmit={saveQuote}>
