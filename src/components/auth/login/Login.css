@@ -1,0 +1,21 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 6rem
+}
+
+.login-button{
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-family: cursive;
+    color: whitesmoke;;
+    background: var(--primary-color);
+    width: 10rem;
+}

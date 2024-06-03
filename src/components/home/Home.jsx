@@ -6,6 +6,7 @@ import { useState, useEffect, useContext } from 'react';
 import { QuoteContext } from '../../App';
 import { getQuotesFromServer } from '../../lib/quotes';
 import "./Home.css";
+import Navbar from '../navbar/Navbar';
 
 // function retrieveQuotes() {
 //   return fetch("http://localhost:3000/quotes").then((response) =>
@@ -42,6 +43,7 @@ export default function Home(){
 
     return(
     <>
+      <Navbar />
       <Search onSearchChange={onSearchChange} />
       <FavoriteQuotes />
       <QuotesList searchTerm={searchTerm} />

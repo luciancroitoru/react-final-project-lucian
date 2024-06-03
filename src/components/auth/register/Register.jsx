@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "./Register.css";
 
 export function Register() {
      const navigate = useNavigate();
@@ -30,36 +31,50 @@ export function Register() {
     }
   
     return (
-      <form onSubmit={register}>
-        <fieldset>
+      <form onSubmit={register} className="register-container">
+
+        <fieldset className="username-container">
           <label htmlFor="username">Username:</label>
-          <div>
+          <div className="input-username">
+            <input type="text" id="username" name="username" />
+          </div>
+        </fieldset>
+
+        <fieldset className="firstname-container">
+          <label htmlFor="username">First Name:</label>
+          <div className="input-first-name">
+            <input type="text" id="username" name="username" />
+          </div>
+        </fieldset>
+
+        <fieldset className="surname-container">
+          <label htmlFor="username">Surname:</label>
+          <div className="input-surname">
             <input type="text" id="username" name="username" />
           </div>
         </fieldset>
   
-        <fieldset>
+        <fieldset className="email-container"> 
           <label htmlFor="email">Email:</label>
-          <div>
+          <div className="input-email">
             <input type="email" id="email" name="email" />
           </div>
         </fieldset>
   
-        <fieldset>
+        <fieldset className="password-container">
           <label htmlFor="password">Password:</label>
-          <div>
+          <div className="input-password">
             <input type="password" id="password" name="password" />
           </div>
         </fieldset>
   
-        <fieldset>
+        <fieldset className="retype-password-container">
           <label htmlFor="reTypePassword">Re-type password:</label>
-          <div>
+          <div className="input-retype-password">
             <input type="password" id="reTypePassword" name="reTypePassword" />
           </div>
         </fieldset>
-  
-        <button>Register</button>
+        <button className="button-register">Register</button>
       </form>
     );
   }

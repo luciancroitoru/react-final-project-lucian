@@ -7,7 +7,6 @@ import CreateQuote from './components/create-quote/CreateQuote';
 import { getQuotesFromServer } from './lib/quotes';
 import { Register } from './components/auth/register/Register';
 import Login from './components/auth/login/Login';
-import Navbar from './components/navbar/Navbar';
 
 // import CreateQuote from './components/CreateQuote';
 // import Logout from './components/Logout';
@@ -32,7 +31,7 @@ useEffect(() =>{
     <>
       <QuoteContext.Provider value={{quotes, setQuotes}}>
         <AuthContext.Provider value={{auth, setAuth}}>
-        <Navbar />
+        {/* <Navbar /> */}
           <Routes>
             <Route path="/" element = {<Home/>}></Route>
            <Route path="/quote/:idFromPath" element={<QuoteDetails/>}></Route>

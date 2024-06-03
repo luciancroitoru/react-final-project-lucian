@@ -45,7 +45,7 @@ export default function Login() {
   return (
     <form onSubmit={login}>
       {error ? <p className='error'>{error}</p> : ""}
-
+      <div className="login-container">
       <fieldset>
         <label htmlFor="email">Email:</label>
         <div>
@@ -59,8 +59,8 @@ export default function Login() {
           <input type="password" id="password" name="password" />
         </div>
       </fieldset>
-
-      <button>Login</button>
+      <button className="login-button">Login</button>
+      </div>
     </form>
   );
 }

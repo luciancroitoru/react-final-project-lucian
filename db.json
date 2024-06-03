@@ -5,17 +5,22 @@
       "password": "$2a$10$PNtrul65iIV6pcHjoBLLse6QjlUD18vseiyU.qX/HevGuU7yWFXVK",
       "username": "lucian",
       "id": 1
+    },
+    {
+      "email": "lost@gmail.com",
+      "password": "$2a$10$5eRXonVqyzq2UuyzP0Rp8OS4IOlM5o3TYfS/EdOVCVOgDHGtifVwm",
+      "username": "",
+      "id": 2
     }
   ],
   "quotes": [
     {
-      "id": "a8d2518d-f7d6-4b7e-abe7-61ba1182df66",
       "text": "''Code even when everything seems dark in front of your eyes''",
       "author": "Lucian Taylor",
       "imageUrl": "https://picsum.photos/id/1/450/300",
-      "date": "2024-5-21",
-      "rating": 5,
-      "bookmark": false
+      "date": "2024-06-01",
+      "rating": "4",
+      "id": "a8d2518d-f7d6-4b7e-abe7-61ba1182df66"
     },
     {
       "text": "''It is never too late to call an old friend''",
@@ -135,6 +140,30 @@
       "date": "2024-05-30",
       "rating": "4",
       "id": "FGJOWwW"
+    },
+    {
+      "text": "efsdfdscdscdssvsd",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/9/450/300",
+      "date": "2024-05-30",
+      "rating": "2",
+      "id": "KsW1tMq"
+    },
+    {
+      "text": "My code is sooooo gooood",
+      "author": "me",
+      "imageUrl": "https://picsum.photos/id/15/450/300",
+      "date": "2024-05-28",
+      "rating": "2",
+      "id": "WypgXX-"
+    },
+    {
+      "text": "fdsfdsfsdfsdfsd",
+      "author": "ffdsfsdfs",
+      "imageUrl": "https://picsum.photos/id/6/450/300",
+      "date": "2024-05-30",
+      "rating": "3",
+      "id": "hJU7kci"
     }
   ]
 }
