@@ -125,7 +125,7 @@ export default function CreateQuote() {
               type="date"
               id="date"
               required
-              defaultValue={selectedQuote?.date}
+                defaultValue={selectedQuote ? selectedQuote.date : new Date().toISOString().split('T')[0]} 
             />
           </fieldset>
 

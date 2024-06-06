@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../App";
 
-import './Login.css';
+import "./Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -43,24 +43,57 @@ export default function Login() {
   }
 
   return (
+    <>
+    <div className="login-page-container">
+    <h1 className="h1_login_page">Please log in with your credentials:</h1>
     <form onSubmit={login}>
-      {error ? <p className='error'>{error}</p> : ""}
+      {error && <p className="error">{error}</p>}
       <div className="login-container">
-      <fieldset>
-        <label htmlFor="email">Email:</label>
-        <div>
-          <input type="email" id="email" name="email" />
-        </div>
-      </fieldset>
+        <fieldset>
+          <label htmlFor="label_email_login">Email:</label>
+          <input
+            className="input_email_login"
+            type="email"
+            id="email"
+            name="email"
+            required
+            minLength={5}
+            maxLength={25}
+          />
+        </fieldset>
 
-      <fieldset>
-        <label htmlFor="password">Password:</label>
-        <div>
-          <input type="password" id="password" name="password" />
-        </div>
-      </fieldset>
-      <button className="login-button">Login</button>
+        <fieldset>
+          <label htmlFor="label_password_login">Password:</label>
+          <input
+            className="input_password_login"
+            type="password"
+            id="password"
+            name="password"
+            required
+            maxLength={25}
+          />
+        </fieldset>
+        <button className="login-button">Login</button>
+
+        <Link to="/register" className="register-back-link">
+          <button
+            className="button_register_back_to_login"
+            // onClick={handleBackClickRegister}
+            >No account yet? Click me to register.
+        </button>
+        </Link>
+
+        
+        {/* <Link to="/" className="register-back-link">
+          <button
+            className="button_register_back_to_login"
+            // onClick={handleBackClickRegister}
+            >Click me to go back to main page.
+        </button>
+        </Link> */}
       </div>
     </form>
+    </div>
+    </>
   );
 }

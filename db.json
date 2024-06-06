@@ -11,6 +11,54 @@
       "password": "$2a$10$5eRXonVqyzq2UuyzP0Rp8OS4IOlM5o3TYfS/EdOVCVOgDHGtifVwm",
       "username": "",
       "id": 2
+    },
+    {
+      "email": "me@gmail.com",
+      "password": "$2a$10$ATzf9TdeYf7BafC6ZDvwL.g3uCT0pBfg/uCoKDLiSgxgOOMehbqI6",
+      "username": "",
+      "first_name": "Mihai",
+      "last_name": "Traian",
+      "id": 3
+    },
+    {
+      "email": "bb@yahoo.com",
+      "password": "$2a$10$SCyKdMoGTwPZad8mPdyN4eP/pZsBOuJnY/icwTRvkw3NNkLP2s97K",
+      "username": "",
+      "first_name": "Ion",
+      "last_name": "Cetateanul",
+      "id": 4
+    },
+    {
+      "email": "cinci@salam.ro",
+      "password": "$2a$10$ZWTJ7QW0W5Sty..tdzhV/uLXS7nURsLUBn.6TRTiAap0/3J5Zyt0G",
+      "username": "",
+      "first_name": "Ionut",
+      "last_name": "Salam",
+      "id": 5
+    },
+    {
+      "email": "luciani@gmail.com",
+      "password": "$2a$10$ojxle/zDJEnCegefHXloiOLiLMH3n.4Y4ZXwAGU1ZGNxbI8VfNF4G",
+      "username": "",
+      "first_name": "Luc",
+      "last_name": "Cr",
+      "id": 6
+    },
+    {
+      "email": "dan.c@gmail.com",
+      "password": "$2a$10$78eQQtgWoVeNv6fvv5abp.TH/lwvk1snc3x7gXvTxoX7YHyeMRVwC",
+      "username": "",
+      "first_name": "Dan",
+      "last_name": "Cr",
+      "id": 7
+    },
+    {
+      "email": "dan.cr@gmail.com",
+      "password": "$2a$10$i2zGxnRIoFj///lKLLVvOeoYLtZNutNws6IGVpL/JPcMGkm6k4ZHu",
+      "username": "",
+      "first_name": "Dan",
+      "last_name": "Cr",
+      "id": 8
     }
   ],
   "quotes": [
@@ -24,7 +72,7 @@
     },
     {
       "text": "''It is never too late to call an old friend''",
-      "author": "Luci Taylor",
+      "author": "Adi Moldovan",
       "imageUrl": "https://picsum.photos/id/3/450/300",
       "date": "2024-05-30",
       "rating": "4",
@@ -110,12 +158,12 @@
       "id": "24d5"
     },
     {
-      "id": "d29e",
       "text": "Link me with all the goods in this world",
       "author": "me",
-      "imageUrl": "https://picsum.photos/id/11/450/300",
+      "imageUrl": "https://picsum.photos/id/2/450/300",
       "date": "2024-05-24",
-      "rating": "2"
+      "rating": "2",
+      "id": "d29e"
     },
     {
       "text": "Prepare to react to constant change to find the key to success. ",
@@ -134,36 +182,44 @@
       "rating": "5"
     },
     {
-      "text": "Eat, sleep, code, repeat!",
-      "author": "Anonymous",
-      "imageUrl": "https://picsum.photos/id/8/450/300",
-      "date": "2024-05-30",
-      "rating": "4",
-      "id": "FGJOWwW"
-    },
-    {
-      "text": "efsdfdscdscdssvsd",
-      "author": "me",
-      "imageUrl": "https://picsum.photos/id/9/450/300",
-      "date": "2024-05-30",
-      "rating": "2",
-      "id": "KsW1tMq"
-    },
-    {
-      "text": "My code is sooooo gooood",
-      "author": "me",
+      "text": "Get up early, put some more happiness in your life and delete all negative feelings!",
+      "author": "Lucian",
       "imageUrl": "https://picsum.photos/id/15/450/300",
-      "date": "2024-05-28",
-      "rating": "2",
-      "id": "WypgXX-"
-    },
-    {
-      "text": "fdsfdsfsdfsdfsd",
-      "author": "ffdsfsdfs",
-      "imageUrl": "https://picsum.photos/id/6/450/300",
       "date": "2024-05-30",
       "rating": "3",
-      "id": "hJU7kci"
+      "id": "VwR8l7x"
+    },
+    {
+      "text": "Special thanks to Dan!",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/25/450/300",
+      "date": "2024-06-04",
+      "rating": "5",
+      "id": "klWN_Od"
+    },
+    {
+      "text": "Quote till you can't quote no more.",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/30/450/300",
+      "date": "2024-06-02",
+      "rating": "4",
+      "id": "2N_0lUU"
+    },
+    {
+      "text": "fdfsgssfds",
+      "author": "Lucian",
+      "imageUrl": "https://picsum.photos/id/30/450/300",
+      "date": "2024-06-07",
+      "rating": "2",
+      "id": "5oAJEL8"
+    },
+    {
+      "text": "dsdfsssssssssssssssssssssssssssss",
+      "author": "Lucian Taylor",
+      "imageUrl": "https://picsum.photos/id/6/450/300",
+      "date": "2024-06-06",
+      "rating": "2",
+      "id": "nG-7fJP"
     }
   ]
 }
