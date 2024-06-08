@@ -1,3 +1,3 @@
-Final project React course.
-List of quotes with full CRUD features.
-implemented authentication, with register, login, and logout features.
+Class project done in React.
+The project fetches a list of quotes with multiple properties from a json-server. CRUD done on the objects.
+Implementation of authentication, with register, login, and logout features. Authentication required for PUT, POST, DELETE.
