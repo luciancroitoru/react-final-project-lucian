@@ -1,110 +1,49 @@
-/* Basic reset */
-body, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-/* Drawer menu */
-.drawer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the screen */
-    height: 3.5rem; /* Height of the navbar */
-    background-color: #1F322A;
-    color: white;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-}
-
-.drawer__menu {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    width: 100%;
-    list-style: none;
-    height: 100%;
-    align-items: center; /* Center items vertically */
-    margin-right: 4rem;
-}
-
-.drawer__item {
-    font-family: cursive;
-    padding: 15px 20px;
-    color: whitesmoke;
-}
-
-.drawer__link {
-    color: white;
-    font-size: 1.2rem;
-    display: block;
-    transition: color 0.3s; /* Smooth transition for color */
-}
-
-.drawer__link:hover {
-    color: deeppink; /* Change color on hover */
-}
-
-
-/* Basic reset
-body, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-.menu-button {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: whitesmoke;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 101;
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 .drawer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #1F322A;
-    color: white;
-    padding-top: 60px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 100;
-}
-
-.drawer.open {
-    transform: translateX(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #1f322a;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 100;
 }
 
 .drawer__menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  margin-right: 4rem;
 }
 
 .drawer__item {
-    font-family: cursive;
-    padding: 15px 20px;
-    color: whitesmoke
+  font-family: cursive;
+  padding: 15px 20px;
+  color: whitesmoke;
 }
 
 .drawer__link {
-    color: white;
-    font-size: 1.2rem;
-    display: block;
-    transition: color 0.3s;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  transition: color 0.3s;
 }
 
 .drawer__link:hover {
-    color: deeppink;
-} */
+  color: deeppink;
+}

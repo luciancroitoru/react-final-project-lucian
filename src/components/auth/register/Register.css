@@ -1,19 +1,19 @@
-.register-page-container{
-    display: flex;
-    flex-direction: column;
+.register-page-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.h1_register_page{
-    align-self: center;
-    margin-top: 2rem;
+.h1_register_page {
+  align-self: center;
+  margin-top: 6rem;
 }
 
 .register-container {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .username-container,
@@ -22,63 +22,68 @@
 .email-container,
 .password-container,
 .retype-password-container {
-    display: flex;
-    align-items: center;
-    font-size: larger;
+  display: flex;
+  align-items: center;
+  font-size: larger;
 }
 
 label {
-    display:flex;
-    width: 15rem;
-    margin-right: 3rem;
+  display: flex;
+  width: 15rem;
+  margin-right: 3rem;
 }
 
-.input-username, .input-first-name, .input-surname, .input-email, .input-password, .input-retype-password {
-    width: 18rem; 
-    display:flex;
+.input-username,
+.input-first-name,
+.input-surname,
+.input-email,
+.input-password,
+.input-retype-password {
+  width: 18rem;
+  display: flex;
 }
 
-.input_username, 
+.input_username,
 .input_first_name,
 .input_last_name,
 .input_email,
 .input_password,
-.input_reTypePassword{
-    color: whitesmoke;
-    border: 1px solid white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    font-family: cursive;
-    width: 100%;
+.input_reTypePassword {
+  color: whitesmoke;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-family: cursive;
+  width: 100%;
 }
-.button_register_back_to_login{
-    border: 1px solid white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    font-family: cursive;
-    color: whitesmoke;
-    background: var(--primary-color);
-    width: 10rem;
-    align-self: center;
-    width: fit-content;
+.button_register_back_to_login {
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-family: cursive;
+  color: whitesmoke;
+  background: var(--primary-color);
+  width: 10rem;
+  align-self: center;
+  width: fit-content;
 }
 
 .button-register {
-    border: 1px solid white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    font-family: cursive;
-    color: whitesmoke;
-    background: var(--primary-color);
-    width: 10rem;
-    align-self: center;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-family: cursive;
+  color: whitesmoke;
+  background: var(--primary-color);
+  width: 10rem;
+  align-self: center;
 }

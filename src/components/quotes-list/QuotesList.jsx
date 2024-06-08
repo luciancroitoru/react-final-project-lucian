@@ -6,11 +6,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { QuoteContext } from "../../App.jsx";
 
-
-function QuotesList({ searchTerm}) {
-    const {quotes} = useContext(QuoteContext);
-
-//   console.log({ searchTerm, quotes });
+function QuotesList({ searchTerm }) {
+  const { quotes } = useContext(QuoteContext);
+  //   console.log({ searchTerm, quotes });
 
   const filteredQuotes = quotes.filter(({ text, author, date, rating }) =>
     (text + author + date + rating + "/5")
@@ -21,13 +19,13 @@ function QuotesList({ searchTerm}) {
   const quotesNotFound = filteredQuotes.length === 0;
 
   // console.log(JSON.stringify(quotes));
-
-  if(!quotes?.length){
-    return(
-      <h1>There are no quotes to display. Please create one from the navbar.</h1>
-    )
+  if (!quotes?.length) {
+    return (
+      <h1>
+        There are no quotes to display. Please create one from the navbar.
+      </h1>
+    );
   }
-
 
   return (
     <section>
@@ -36,9 +34,7 @@ function QuotesList({ searchTerm}) {
       </header>
 
       {quotesNotFound ? (
-        <p className="quoteNotFoundMessage">
-          Quote not found.
-        </p>
+        <p className="quoteNotFoundMessage">Quote not found.</p>
       ) : (
         <ul className="quote-list">
           {filteredQuotes.map((quoteItem) => (

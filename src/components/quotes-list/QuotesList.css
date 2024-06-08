@@ -1,25 +1,25 @@
 .title {
-    margin-left: 4rem;
-    margin-top: 30px;
-    font-size: larger;
-    font-family: cursive;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-size: larger;
+  font-family: cursive;
 }
 
-.quote-list{
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
-    display: flex;
-    flex-flow: wrap;
-    column-gap: 3em;
-    row-gap: 3em;
-    list-style-type: none;
-    justify-content: space-between;
+.quote-list {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-flow: wrap;
+  column-gap: 3em;
+  row-gap: 3em;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
-.quoteNotFoundMessage{
-    font-family: cursive;
-    font-size: x-large;
-    margin-left: 3em;
-    color: black;
+.quoteNotFoundMessage {
+  font-family: cursive;
+  font-size: x-large;
+  margin-left: 20rem;
+  color: black;
 }

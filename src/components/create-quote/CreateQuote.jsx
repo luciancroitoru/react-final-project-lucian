@@ -3,17 +3,15 @@ import "./CreateQuote.css";
 import { useContext } from "react";
 import { AuthContext, QuoteContext } from "../../App";
 import { getQuotesFromServer } from "../../lib/quotes";
-// import { IoArrowBackOutline } from "react-icons/io5";
 import { TfiHome } from "react-icons/tfi";
 
 export default function CreateQuote() {
   const navigate = useNavigate();
   const { quotes, setQuotes } = useContext(QuoteContext);
   const { idFromPath } = useParams();
-  const{auth} = useContext(AuthContext);
+  const { auth } = useContext(AuthContext);
   const selectedQuote = quotes.find((quote) => quote.id === idFromPath);
 
-  // onClick handler to perform side effects and navigate back to home
   const handleBackClickDetails = () => {
     navigate("/");
   };
@@ -37,11 +35,11 @@ export default function CreateQuote() {
       fetch(`http://localhost:3000/quotes/${idFromPath}`, {
         method: "PUT",
         headers: {
-          'Content-Type': "application/json",
-          'Authorization': `Bearer ${auth}`
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${auth}`,
         },
         body: JSON.stringify(quote),
-    }).then(() => {
+      }).then(() => {
         navigate("/");
         getQuotesFromServer(setQuotes);
       });
@@ -49,8 +47,8 @@ export default function CreateQuote() {
       fetch("http://localhost:3000/quotes", {
         method: "POST",
         headers: {
-          'Content-Type': "application/json",
-          'Authorization': `Bearer ${auth}`
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${auth}`,
         },
         body: JSON.stringify(quote),
       }).then(() => {
@@ -66,13 +64,13 @@ export default function CreateQuote() {
     <>
       <section className="create-quote-section">
         <div className="create-quote-back-title-container">
-        <Link to="/" className="quote-create-back-link">
-          <TfiHome
-            className="quote-detail__back_to_home"
-            onClick={handleBackClickDetails}
-          />
-        </Link>
-        <span className="create-page-title">Quote details below:</span>
+          <Link to="/" className="quote-create-back-link">
+            <TfiHome
+              className="quote-detail__back_to_home"
+              onClick={handleBackClickDetails}
+            />
+          </Link>
+          <span className="create-page-title">Quote details below:</span>
         </div>
         <form className="create-form-container" onSubmit={saveQuote}>
           <fieldset className="textarea-container">
@@ -125,7 +123,11 @@ export default function CreateQuote() {
               type="date"
               id="date"
               required
-                defaultValue={selectedQuote ? selectedQuote.date : new Date().toISOString().split('T')[0]} 
+              defaultValue={
+                selectedQuote
+                  ? selectedQuote.date
+                  : new Date().toISOString().split("T")[0]
+              }
             />
           </fieldset>
 

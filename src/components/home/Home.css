@@ -1,5 +1,13 @@
-.no-quotes-error-message{
-    padding: 0.5rem;
-    margin-left: 4rem;
+.no-quotes-error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.no-quotes-error-message {
+  padding: 0.5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+  align-items: center;
 }

@@ -2,62 +2,62 @@
 .quote-detail__author,
 .quote-detail__date,
 .quote-detail__rating,
-.quote-detail__back_to_home
-{
-    color: whitesmoke;
-    font-size: large;
-    font-family: cursive;
-    width: fit-content;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+.quote-detail__back_to_home {
+  color: whitesmoke;
+  font-size: large;
+  font-family: cursive;
+  width: fit-content;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
 }
 
-.quote-detail__container{
-    display:flex;
-    flex-direction: column;
-    margin: 5rem;
-    overflow: auto;
+.quote-detail__container {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  overflow: auto;
 }
 
-.quote-detail__image{
-    width: fit-content;
-    border-radius: 8px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+.quote-detail__image {
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.quote-detail__title{
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    width: fit-content;
-    color: whitesmoke;
-    font-family: cursive;
-    margin-bottom: 2rem;
-    padding: 1rem;
+.quote-detail__title {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  color: whitesmoke;
+  font-family: cursive;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
-.quote-detail-edit-delete-button-container{
-    display: flex;
-    column-gap: 2rem;
-        margin-top: 2rem;
+.quote-detail-edit-delete-button-container {
+  display: flex;
+  column-gap: 2rem;
+  margin-top: 2rem;
 }
 
-.quote-detail__delete_button{
-    margin-bottom: 2rem;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    width: fit-content;
-    color: whitesmoke;
-    font-family: cursive;
-    padding: 1rem;
-    background: var(--primary-color);
-    font-size: large;
+.quote-detail__delete_button {
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  color: whitesmoke;
+  font-family: cursive;
+  padding: 1rem;
+  background: var(--primary-color);
+  font-size: large;
 }
 
-.quote-detail__edit_button{
-    margin-bottom: 2rem;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    width: fit-content;
-    color: whitesmoke;
-    font-family: cursive;
-    padding: 1rem;
-    background: var(--primary-color);
-    font-size: large;
+.quote-detail__edit_button {
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  color: whitesmoke;
+  font-family: cursive;
+  padding: 1rem;
+  background: var(--primary-color);
+  font-size: large;
 }

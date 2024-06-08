@@ -59,6 +59,46 @@
       "first_name": "Dan",
       "last_name": "Cr",
       "id": 8
+    },
+    {
+      "email": "tester1@gmail.com",
+      "password": "$2a$10$WSLqOqzrlbmyqg3wtXsao.iCzx/VFhow39HUayBrbvGTyd.2PcBkO",
+      "username": "tester1",
+      "first_name": "tester1",
+      "last_name": "Test1",
+      "id": 9
+    },
+    {
+      "email": "tester2@gmail.com",
+      "password": "$2a$10$UrU1H.TUDBJlWyp/mCjsqeFU3dYWeF4C8ynndf4Y3SKHlYy3nkNDq",
+      "username": "tester2",
+      "first_name": "tester2",
+      "last_name": "test2",
+      "id": 10
+    },
+    {
+      "email": "tester3@gmail.com",
+      "password": "$2a$10$CZld9UDd3J9DhYNIwtLUjuBOhHv61SzYIvoVql8Iw2pBj7/pcFr4a",
+      "username": "tester3",
+      "first_name": "tester3",
+      "last_name": "tester3",
+      "id": 11
+    },
+    {
+      "email": "tester4@gmail.com",
+      "password": "$2a$10$cb4uFNQ6O6AZkevB1Qoq1O8ni1LT.S2sO/qgI.RlIWmJvQl8c5dMO",
+      "username": "tester4",
+      "first_name": "tester4",
+      "last_name": "tester4",
+      "id": 12
+    },
+    {
+      "email": "tester5@gmail.com",
+      "password": "$2a$10$IGRT6D9I1D9v8wg4sluaw.uECt928H2qctsWa/ZcSBfqNUl7XDANa",
+      "username": "tester5",
+      "first_name": "tester5",
+      "last_name": "tester5",
+      "id": 13
     }
   ],
   "quotes": [
@@ -174,52 +214,12 @@
       "id": "bfc8"
     },
     {
-      "id": "75e0",
-      "text": "Get up early, put more happiness in your life, post a wise quote every day, and delete all negative thoughts.",
+      "text": "Get up early, put more happiness in your life, post a wise quote every day, and delete all negative feelings.",
       "author": "Lucian",
       "imageUrl": "https://picsum.photos/id/15/450/300",
       "date": "2024-06-02",
-      "rating": "5"
-    },
-    {
-      "text": "Get up early, put some more happiness in your life and delete all negative feelings!",
-      "author": "Lucian",
-      "imageUrl": "https://picsum.photos/id/15/450/300",
-      "date": "2024-05-30",
-      "rating": "3",
-      "id": "VwR8l7x"
-    },
-    {
-      "text": "Special thanks to Dan!",
-      "author": "Lucian",
-      "imageUrl": "https://picsum.photos/id/25/450/300",
-      "date": "2024-06-04",
       "rating": "5",
-      "id": "klWN_Od"
-    },
-    {
-      "text": "Quote till you can't quote no more.",
-      "author": "Lucian",
-      "imageUrl": "https://picsum.photos/id/30/450/300",
-      "date": "2024-06-02",
-      "rating": "4",
-      "id": "2N_0lUU"
-    },
-    {
-      "text": "fdfsgssfds",
-      "author": "Lucian",
-      "imageUrl": "https://picsum.photos/id/30/450/300",
-      "date": "2024-06-07",
-      "rating": "2",
-      "id": "5oAJEL8"
-    },
-    {
-      "text": "dsdfsssssssssssssssssssssssssssss",
-      "author": "Lucian Taylor",
-      "imageUrl": "https://picsum.photos/id/6/450/300",
-      "date": "2024-06-06",
-      "rating": "2",
-      "id": "nG-7fJP"
+      "id": "75e0"
     }
   ]
 }
