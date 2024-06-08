@@ -42,7 +42,21 @@ function Navbar() {
           </ul>
         </div>
       ) : (
-        ""
+        <div className="drawer">
+          <ul className="drawer__menu">
+          <li className="drawer__item">
+              <Link to="/login" className="drawer__link">
+                Log in
+              </Link>
+            </li>
+
+            <li className="drawer__item">
+              <Link to="/register" className="drawer__link">
+                Register
+              </Link>
+            </li>
+          </ul>
+        </div>
       )}
     </>
   );

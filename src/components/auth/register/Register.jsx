@@ -1,10 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Register.css";
+import { useState } from "react";
 
 export function Register() {
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
-  function register(event) {
+  const register = async (event) => {
     event.preventDefault();
 
     const formElement = event.target;
@@ -12,7 +14,8 @@ export function Register() {
       formElement;
 
     if (password.value !== reTypePassword.value) {
-      console.warn(`Passwords don't match!`);
+      // console.warn(`Passwords don't match!`);
+      setError("Passwords do not match!");
       return;
     }
 
@@ -24,14 +27,28 @@ export function Register() {
       last_name: last_name.value,
     };
 
-    fetch("http://localhost:3000/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(user),
-    }).then(() => navigate("/login"));
-  }
+    let response;
+    try {
+      response = await fetch("http://localhost:3000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      });
+    } catch (error) {
+      console.log("There was an error");
+      setError(error);
+      return;
+    }
+
+    if (response?.ok) {
+      navigate("/login");
+    } else {
+      const errorMessage = await response.text();
+      setError(new Error(errorMessage));
+    }
+  };
 
   return (
     <>
@@ -40,6 +57,7 @@ export function Register() {
           Please complete the form below to register:
         </h1>
         <form onSubmit={register} className="register-container">
+          {error && <p className="error">{error}</p>}
           <fieldset className="username-container">
             <label className="label_username" htmlFor="username">
               Username:

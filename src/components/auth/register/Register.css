@@ -87,3 +87,7 @@ label {
   width: 10rem;
   align-self: center;
 }
+
+.passwords_do_not_match{
+  color: red;
+}
